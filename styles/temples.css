@@ -1,0 +1,73 @@
+:root {
+  --primary: #1E3A5F;
+  --secondary: #4A90E2;
+  --accent1: #F2A20C;
+  --accent2: #E94F37;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+h2, figcaption {
+    text-align: center;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#menu-button {
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
