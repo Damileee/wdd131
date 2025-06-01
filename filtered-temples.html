@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Temple Album with filtering and lazy loading" />
+    <title>WDD 131 – Enhanced Temple Album - Damilare Olasoju</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+        </div>
+
+        <nav id="sidebar" class="sidebar" aria-label="Sidebar Temple Navigation">
+            <button id="closeSidebar" aria-label="Close navigation menu">&times;</button>
+            <ul class="nav-list">
+                <li><button data-filter="all" class="filter-button active" aria-pressed="true">Home</button></li>
+                <li><button data-filter="old" class="filter-button" aria-pressed="false">Old</button></li>
+                <li><button data-filter="new" class="filter-button" aria-pressed="false">New</button></li>
+                <li><button data-filter="large" class="filter-button" aria-pressed="false">Large</button></li>
+                <li><button data-filter="small" class="filter-button" aria-pressed="false">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <nav aria-label="Temple filter navigation">
+            <ul class="nav-list">
+                <li><button data-filter="all" class="filter-button active" aria-pressed="true">Home</button></li>
+                <li><button data-filter="old" class="filter-button" aria-pressed="false">Old</button></li>
+                <li><button data-filter="new" class="filter-button" aria-pressed="false">New</button></li>
+                <li><button data-filter="large" class="filter-button" aria-pressed="false">Large</button></li>
+                <li><button data-filter="small" class="filter-button" aria-pressed="false">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="section-title">Home</h2>
+        <section class="gallery" aria-live="polite" aria-label="Temple gallery">
+            <!-- Temple cards is generated here by my JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Damilare Olasoju, Lagos, Nigeria</p>
+        <p>Last modified: <time id="lastModified" datetime=""></time></p>
+    </footer>
+</body>
+
+</html>
