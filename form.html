@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Damilare Olasoju | Home page with personal and regional info." />
+  <meta name="author" content="Damilare Olasoju" />
+  <title>WDD 131 – Product Review Form - Damilare Olasoju</title>
+  <link rel="stylesheet" href="styles/review.css" />
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      <label for="productName">Product Name<span class="required">*</span></label>
+      <select id="productName" name="productName" required>
+        <!-- Populated by script.js -->
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating<span class="required">*</span></legend>
+        <div class="rating-group">
+          <label><input type="radio" name="rating" id="rating1" value="1" required>☆</label>
+          <label><input type="radio" name="rating" id="rating2" value="2">☆☆</label>
+          <label><input type="radio" name="rating" id="rating3" value="3">☆☆☆</label>
+          <label><input type="radio" name="rating" id="rating4" value="4">☆☆☆☆</label>
+          <label><input type="radio" name="rating" id="rating5" value="5">☆☆☆☆☆</label>
+        </div>
+      </fieldset>
+
+      <label for="installDate">Date of Installation<span class="required">*</span></label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy Setup"> Easy Setup</label>
+        <label><input type="checkbox" id="feature2" name="features" value="High Performance"> High Performance</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Durable"> Durable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Energy Efficient"> Energy Efficient</label>
+      </fieldset>
+
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" rows="4"></textarea>
+
+      <label for="userName">Your Name</label>
+      <input type="text" id="userName" name="userName">
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Damilare Olasoju</p>
+  </footer>
+</body>
+</html>
