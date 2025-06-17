@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Swift Trek Travel helps you plan fast, safe, and memorable adventures." />
+  <title>Swift Trek Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/swift-trek.css">
+</head>
+<body>
+  <header>
+    <h1>Swift Trek Travel</h1>
+    <nav>
+      <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Explore the World Swiftly & Safely</h2>
+      <p>Your one-stop platform for travel guides, booking, and tips.</p>
+      <img src="images/hero.webp" alt="Traveler overlooking mountains" loading="lazy">
+    </section>
+
+    <section id="destinations">
+      <h2>Top Summer Destinations in Europe</h2>
+      <div id="destinationCards"></div>
+    </section>
+
+    <section id="tips">
+      <h2>Solo Travel Tips</h2>
+      <ul>
+        <li>Always share your itinerary with someone you trust.</li>
+        <li>Use travel insurance for unexpected events.</li>
+        <li>Stay in safe, well-reviewed accommodations.</li>
+      </ul>
+    </section>
+
+    <section id="booking">
+      <h2>Booking Inquiry</h2>
+      <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">--Select a Destination--</option>
+          <option value="Bali, Indonesia">Bali, Indonesia</option>
+          <option value="Reykjavik, Iceland">Reykjavik, Iceland</option>
+          <option value="Kyoto, Japan">Kyoto, Japan</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Swift Trek Travel</p>
+  </footer>
+
+  <script src="scripts/swift-trek.js"></script>
+</body>
+</html>
